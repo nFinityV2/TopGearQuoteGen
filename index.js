@@ -1,3 +1,5 @@
+// Quote Array
+
 var quotes = [
     "This is brilliant, but I like this. - Jeremy Clarkson",
     "Top Gear. Ambitous, but rubbish. - Jeremy Clarkson",
@@ -14,6 +16,9 @@ var quotes = [
     "He's saying, take the Third Reich. - James May"
 ];
 
+// Randomiser and DOM Manipulation
 var arrRandom = Math.floor(Math.random() * quotes.length);
 var selectedQuote = quotes[arrRandom];
-document.write(selectedQuote);
+document.querySelector("h2").innerText = selectedQuote;
+
+// Button Event Listener

@@ -24,22 +24,22 @@
     
 </head>
 
-<body class="container-fluid">
+<body>
 
     <section id="quote" class="quote-display">
-        <h2>Quote goes here</h2>
+        <div class="container-fluid">
+            <h2>Click to generate superb quote!</h2>
+        </div>    
     </section>
 
     <section id="button" class="button-section">
         <div class="col-lg-12">
-            <button type="button" class="btn btn-lg btn-block btn-light quote-button">Generate new quote!</button>
+            <button onclick="newQuote()" type="button" class="btn btn-lg btn-block btn-light quote-button">Generate new quote!</button>
         </div>
     </section>
 
     <footer id="footer" class="footer-section">
-        <div class="container-fluid">
-            <p>Made by Nathan Soh</p>
-        </div>
+        <p>Made by Nathan Soh</p>
     </footer>
     
     <script src="index.js"></script>

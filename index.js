@@ -16,9 +16,9 @@ var quotes = [
     "He's saying, take the Third Reich. - James May"
 ];
 
-// Randomiser and DOM Manipulation
-var arrRandom = Math.floor(Math.random() * quotes.length);
-var selectedQuote = quotes[arrRandom];
-document.querySelector("h2").innerText = selectedQuote;
-
-// Button Event Listener
+// Randomiser and DOM Manipulation & Button Event Listener and function
+function newQuote (){
+    var arrRandom = Math.floor(Math.random() * quotes.length);
+    var selectedQuote = quotes[arrRandom];
+    document.querySelector("h2").innerText = selectedQuote;
+}

@@ -1,21 +1,20 @@
 /* General */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5 !important;
     text-align: center;
-    color: #fff;
-    
-    background-color: #194719;
+    background-color: rgb(2, 68, 2);
 }
 
 h2 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500 !important;
+    color: white;
 }
 
 p {
-    color: #8f8f8f;
+    color: #c0c0c0;
     font-size: 1rem;
     font-weight: 300 !important;
 }
@@ -25,11 +24,15 @@ p {
     padding: 10%;
 }
 
-/* Button */
-
+/* Images */
+.images {
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+}
 
 /* Footer */
 footer {
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
 }

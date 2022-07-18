@@ -1,6 +1,6 @@
 // Quote Array
 
-var quotes = [
+const quotes = [
     "This is brilliant, but I like this. - Jeremy Clarkson",
     "Top Gear. Ambitous, but rubbish. - Jeremy Clarkson",
     "Speed and power solves many things. - Jeremy Clarkson",
@@ -16,9 +16,12 @@ var quotes = [
     "He's saying, take the Third Reich. - James May",
 ];
 
-// Randomiser and DOM Manipulation & Button Event Listener and function
+// Randomiser for quotes
+var arrRandom = Math.floor(Math.random() * quotes.length);
+var selectedQuote = quotes[arrRandom];
+
+// Function for generating quotes
 function newQuote() {
-    var arrRandom = Math.floor(Math.random() * quotes.length);
-    var selectedQuote = quotes[arrRandom];
-    document.querySelector("h2").innerText = selectedQuote;
+    document.querySelector('h1').innerText = selectedQuote;
 }
+document.getElementById("quote-button").addEventListener("click", newQuote);

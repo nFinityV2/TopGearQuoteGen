@@ -24,4 +24,6 @@ var selectedQuote = quotes[arrRandom];
 function newQuote() {
     document.querySelector('h1').innerText = selectedQuote;
 }
-document.getElementById("quote-button").addEventListener("click", newQuote);
+document.querySelector("#quote-button").addEventListener("click", function(){
+    newQuote();
+});

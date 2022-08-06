@@ -17,8 +17,8 @@ const quotes = [
 ];
 
 // Randomiser for quotes
-var arrRandom = Math.floor(Math.random() * quotes.length);
-var selectedQuote = quotes[arrRandom];
+const arrRandom = Math.floor(Math.random() * quotes.length);
+let selectedQuote = quotes[arrRandom];
 
 // Function for generating quotes
 function newQuote() {
